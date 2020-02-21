@@ -7,3 +7,13 @@ function nestedTarget()
 {
   return document.querySelector('div#nested div.target');
 }
+
+function deepestChild()
+{
+  
+}
+
+function increaseRankBy(n)
+{
+  
+}
