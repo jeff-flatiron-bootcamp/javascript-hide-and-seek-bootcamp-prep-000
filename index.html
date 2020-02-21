@@ -63,12 +63,13 @@
           const list = document.querySelectorAll(".ranked-list")
           for(let i = 0; i < list.length; i++)
           {
-            for(let j = 0; j < list[i].length; j++)
+            const sublist = list.querySelectorAll("div");
+            for(let j = 0; j < sublist.length; j++)
             {
-              let variable = list[i][j].innerHTML;
+              let variable = sublist[j].innerHTML;
               let result = variable + n;
               console.log(`result = ${result}`);
-              list[i][j].innerHTML = (parseInt(list[i][j].innerHTML.toString()) + n).toString();
+              sublist[j].innerHTML = (parseInt(sublist[j].innerHTML.toString()) + n).toString();
             }
           }
         }
