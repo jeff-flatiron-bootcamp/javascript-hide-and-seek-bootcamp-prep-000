@@ -70,7 +70,7 @@
             for(let j = 0; j < sublist.length; j++)
             {
               let variable = sublist[j].innerHTML;
-              let result = variable + n;
+              let result = parseInt(variable) + n;
               console.log(`result = ${result}`);
               sublist[j].innerHTML = result.toString();
             }
