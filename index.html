@@ -62,7 +62,12 @@
           console.log(typeof n);
           const list = document.querySelectorAll(".ranked-list")
           for(let i = 0; i < list.length; i++)
+          {
+            let variable = list[i].innerHTML;
+            let result = variable + n;
+            console.log(result);
             list[i].innerHTML = (parseInt(list[i].innerHTML.toString()) + n).toString();
+          }
         }
     </script>
   </body>
