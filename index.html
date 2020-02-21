@@ -56,5 +56,13 @@
     <script src="node_modules/expect/umd/expect.min.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
+    <script>
+      function increaseRankBy(n)
+        {
+          const list = document.querySelectorAll(".ranked-list")
+          for(let i = 0; i < list.length; i++)
+            list[i].innerHTML = (list[i].innerHTML + n).toString();
+        }
+    </script>
   </body>
 </html>
